@@ -108,8 +108,7 @@ p + ggtitle("n = 9") +
 print(paste('mean = ', mean(my1000$k9),' sd = ',sd(my1000$k9)))
 
 ```
-    The graph is appearing unimodal around where we have 9 samples. But we have a bimodal distribution in the beginning and end of the graphs where they are progressing towards a unimodal distribution. 
-    
+The graph is appearing unimodal around where we have 9 samples. But we have a bimodal distribution in the beginning and end of the graphs where they are progressing towards a unimodal distribution. 
     ```{r}
 numb = 16
 Hdata = Homers_data[sample(1:1000,size=numb*1000, replace=T),"kkardashtemp"]
@@ -130,7 +129,7 @@ p + ggtitle("n = 16") +
 print(paste('mean = ', mean(my1000$k16),' sd = ',sd(my1000$k16)))
 
 ```
-    The graph is looking more unimodal than before with us having 16 samples averaged together. 
+The graph is looking more unimodal than before with us having 16 samples averaged together. 
 
 ```{r}
 numb = 25
@@ -152,7 +151,7 @@ p + ggtitle("n = 25") +
 print(paste('mean = ', mean(my1000$k25),' sd = ',sd(my1000$k25)))
 
 ```
-    With 25 samples averaged together the graphs are becoming more unimodal compared to having smaller sample sizes averaged.
+With 25 samples averaged together the graphs are becoming more unimodal compared to having smaller sample sizes averaged.
 ```{r}
 numb = 36
 Hdata = Homers_data[sample(1:1000,size=numb*1000, replace=T),"kkardashtemp"]
@@ -173,5 +172,5 @@ p + ggtitle("n = 36") +
 print(paste('mean = ', mean(my1000$k36),' sd = ',sd(my1000$k36)))
 
 ```    
-    We went through samples to show the Central Limit Theorem. While increasing our sample sizes, we began to get graphs that looked more unimodal than each one before. When we have a sample size of 36 it gave us graphs that are averaged together with the most even distribution out of the sample sizes we were given.  
+We went through samples to show the Central Limit Theorem. While increasing our sample sizes, we began to get graphs that looked more unimodal than each one before. When we have a sample size of 36 it gave us graphs that are averaged together with the most even distribution out of the sample sizes we were given.  
   
